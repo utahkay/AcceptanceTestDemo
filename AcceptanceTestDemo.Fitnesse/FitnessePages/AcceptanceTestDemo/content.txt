@@ -1,0 +1,7 @@
+!define TEST_SYSTEM {slim}
+!define COMMAND_PATTERN {%m -r fitSharp.Slim.Service.Runner,FitSharp.2.2.net.40\fitsharp.dll %p}
+!define TEST_RUNNER {FitSharp.2.2.net.40\Runner.exe}
+!path ..\AcceptanceTestDemo.Fitnesse\bin\Debug\AcceptanceTestDemo.Fitnesse.dll
+
+
+!contents

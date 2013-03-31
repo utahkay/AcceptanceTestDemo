@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<properties>
+	<AddChild/>
+	<Edit/>
+	<Files/>
+	<Help></Help>
+	<Properties/>
+	<Prune/>
+	<RecentChanges/>
+	<Search/>
+	<Static/>
+	<Suites></Suites>
+	<SymbolicLinks>
+		<AcceptanceTestDemo>file://..\AcceptanceTestDemo.Fitnesse\FitnessePages\AcceptanceTestDemo</AcceptanceTestDemo>
+	</SymbolicLinks>
+	<Versions/>
+	<WhereUsed/>
+</properties>
