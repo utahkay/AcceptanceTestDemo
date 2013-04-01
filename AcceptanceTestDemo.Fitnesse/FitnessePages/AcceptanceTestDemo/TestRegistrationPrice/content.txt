@@ -1,0 +1,6 @@
+!| RegistrationPriceFixture |
+| Conference Name | Number of Registrations | Coupon Code | Days Until Conference | Unit Price? | Total Price? |
+| Agile Austria | 1 | | 10 | 500 | 500 |
+| Agile Austria | 5 | | 10 | 450 | 2250 |
+| Agile Austria | 1 | HALFOFF | 10 | 250 | 250 |
+| Agile Austria | 1 | | 6 | 700 | 700 |

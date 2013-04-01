@@ -1,0 +1,58 @@
+﻿{
+  "Conferences": [
+    {
+      "ConferenceName": "Agile Switzerland",
+      "EventDate": "2013-07-13T00:00:00",
+      "Location": "Zurich",
+      "BasePrices": {
+        "0": 700.0,
+        "7": 500.0,
+        "45": 300.0
+      },
+      "CouponDiscounts": {
+        "": 0.0,
+        "HALFOFF": 0.5
+      },
+      "GroupDiscounts": {
+        "0": 0.0,
+        "5": 0.1
+      }
+    },
+	{
+      "ConferenceName": "Agile Austria",
+      "EventDate": "2013-06-14T00:00:00",
+      "Location": "Vienna",
+      "BasePrices": {
+        "0": 700.0,
+        "7": 500.0,
+        "45": 300.0
+      },
+      "CouponDiscounts": {
+        "": 0.0,
+        "HALFOFF": 0.5
+      },
+      "GroupDiscounts": {
+        "0": 0.0,
+        "5": 0.1
+      }
+	},
+	{
+      "ConferenceName": "Agile France",
+      "EventDate": "2013-08-30T00:00:00",
+      "Location": "Paris",
+      "BasePrices": {
+        "0": 700.0,
+        "7": 500.0,
+        "45": 300.0
+      },
+      "CouponDiscounts": {
+        "": 0.0,
+        "HALFOFF": 0.5
+      },
+      "GroupDiscounts": {
+        "0": 0.0,
+        "5": 0.1
+      }
+    }
+  ]
+}

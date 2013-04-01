@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,16 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalculatorFixture.cs" />
+    <Compile Include="ConferenceListingFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrationPriceFixture.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="FitnessePages\AcceptanceTestDemo\content.txt" />
-    <Content Include="FitnessePages\AcceptanceTestDemo\properties.xml" />
-    <Content Include="FitnessePages\AcceptanceTestDemo\SetUp\content.txt" />
-    <Content Include="FitnessePages\AcceptanceTestDemo\SetUp\properties.xml" />
-    <Content Include="FitnessePages\AcceptanceTestDemo\TestCalculator\content.txt" />
-    <Content Include="FitnessePages\AcceptanceTestDemo\TestCalculator\properties.xml" />
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AcceptanceTestDemo\AcceptanceTestDemo.csproj">
+      <Project>{BB115DB7-BF37-4C72-8371-6E76590D6277}</Project>
+      <Name>AcceptanceTestDemo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -64,10 +64,8 @@
   <ItemGroup>
     <Compile Include="Application\ConferenceResult.cs" />
     <Compile Include="Application\RegistrationPriceResult.cs" />
-    <Compile Include="Application\CalculatePriceVm.cs" />
     <Compile Include="Application\ConferencesFacade.cs" />
     <Compile Include="Controllers\ConferencesController.cs" />
-    <Compile Include="Domain\Calculator.cs" />
     <Compile Include="Domain\Conference.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -177,6 +175,10 @@
     </VisualStudio>
   </ProjectExtensions>
   <PropertyGroup>
-    <PostBuildEvent>copy /Y "$(TargetDir)Repositories\conferences.json" "$(SolutionDir)AcceptanceTestDemo.NUnitAcceptanceTests\bin\Debug"</PostBuildEvent>
+    <PostBuildEvent>copy /Y "$(TargetDir)Repositories\conferences.json" "$(SolutionDir)AcceptanceTestDemo.NUnitAcceptanceTests\bin\Debug"
+
+copy /Y "$(TargetDir)Repositories\conferences.json" "$(SolutionDir)FitnesseServer"
+
+copy /Y "$(TargetDir)Repositories\conferences.json" "$(SolutionDir)AcceptanceTestDemo.SpecFlow\bin\Debug"</PostBuildEvent>
   </PropertyGroup>
 </Project>

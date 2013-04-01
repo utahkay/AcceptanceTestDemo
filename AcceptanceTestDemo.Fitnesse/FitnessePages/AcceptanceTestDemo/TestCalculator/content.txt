@@ -1,5 +1,0 @@
-The calculator can add two numbers.
-
-!|CalculatorFixture|
-|op1            |op2           |Add?           |
-|50             |70            |120            |

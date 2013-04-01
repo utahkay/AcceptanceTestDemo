@@ -1,0 +1,5 @@
+!| ConferenceListingFixture |
+| Conference | Location? | Date? |
+| Agile Austria | Vienna | 2013-06-14 |
+| Agile Switzerland | Zurich | 2013-07-13 |
+| Agile France | Paris | 2013-08-30 |
