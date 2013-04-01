@@ -7,14 +7,18 @@ namespace AcceptanceTestDemo.Domain
 {
     public class Conference
     {
+        public readonly string ConferenceName;
         public DateTime EventDate;
+        public readonly string Location;
         public readonly Dictionary<int, decimal> BasePrices;
         public readonly Dictionary<string, decimal> CouponDiscounts;
         public readonly Dictionary<int, decimal> GroupDiscounts;
 
-        public Conference(DateTime eventDate, Dictionary<int, decimal> basePrices, Dictionary<int, decimal> groupDiscounts, Dictionary<string, decimal> couponDiscounts)
+        public Conference(string conferenceName, DateTime eventDate, string location, Dictionary<int, decimal> basePrices, Dictionary<int, decimal> groupDiscounts, Dictionary<string, decimal> couponDiscounts)
         {
+            ConferenceName = conferenceName;
             EventDate = eventDate;
+            Location = location;
             BasePrices = basePrices;
             GroupDiscounts = groupDiscounts;
             CouponDiscounts = couponDiscounts;

@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
@@ -59,10 +62,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Application\CalculatePriceResult.cs" />
+    <Compile Include="Application\ConferenceResult.cs" />
+    <Compile Include="Application\RegistrationPriceResult.cs" />
     <Compile Include="Application\CalculatePriceVm.cs" />
-    <Compile Include="Application\RegistrationFacade.cs" />
-    <Compile Include="Controllers\RegistrationController.cs" />
+    <Compile Include="Application\ConferencesFacade.cs" />
+    <Compile Include="Controllers\ConferencesController.cs" />
     <Compile Include="Domain\Calculator.cs" />
     <Compile Include="Domain\Conference.cs" />
     <Compile Include="Global.asax.cs">
@@ -134,7 +138,11 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Repositories\conferences.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
@@ -168,4 +176,7 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>copy /Y "$(TargetDir)Repositories\conferences.json" "$(SolutionDir)AcceptanceTestDemo.NUnitAcceptanceTests\bin\Debug"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
