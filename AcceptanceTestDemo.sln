@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcceptanceTestDemo.SpecFlow
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcceptanceTestDemo.Fitnesse", "AcceptanceTestDemo.Fitnesse\AcceptanceTestDemo.Fitnesse.csproj", "{4B72C216-4CAC-4C44-9AA0-ADE7AB45DB1E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcceptanceTestDemo.NUnitAcceptanceTests", "AcceptanceTestDemo.NUnitAcceptanceTests\AcceptanceTestDemo.NUnitAcceptanceTests.csproj", "{34D29BE9-5286-4BCA-9475-41A94C901766}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{4B72C216-4CAC-4C44-9AA0-ADE7AB45DB1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B72C216-4CAC-4C44-9AA0-ADE7AB45DB1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B72C216-4CAC-4C44-9AA0-ADE7AB45DB1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34D29BE9-5286-4BCA-9475-41A94C901766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34D29BE9-5286-4BCA-9475-41A94C901766}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34D29BE9-5286-4BCA-9475-41A94C901766}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34D29BE9-5286-4BCA-9475-41A94C901766}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
