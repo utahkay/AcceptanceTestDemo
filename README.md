@@ -99,9 +99,34 @@ In London some years ago, several developers began feeling that "testing" might 
 
 http://cukes.info/
 
-In __RegistrationPrice.feature__ you can see the specs that are equivalent to our four NUnit test cases. This text is backed by __RegistrationPriceSteps.cs__, which we'll need to implement.
+In __RegistrationPrice.feature__ you can see the specs that are equivalent to our four NUnit test cases. 
 
+> Feature: RegistrationPrice
+>   In order to decide whether to attend the conference
+> 	As a potential attendee
+> 	I want to know my registration price
+> 
+> @mytag
+> Scenario: Single registration
+> 	Given I am purchasing 1 registration for Agile Austria
+> 	Then the total price should be 500
+> 
+> Scenario: Group registration
+>   Given I am purchasing 5 registrations for Agile Austria
+> 	Then the unit price should be 450
+> 	And the total price should be 2250
+> 
+> Scenario: Discount code
+>   Given I am purchasing 1 registration for Agile Austria
+> 	And I provide coupon code HALFOFF
+> 	Then the total price should be 250
+> 
+> Scenario: Late registration
+>   Given I am purchasing 1 registration for Agile Austria
+> 	And there are 6 days until the conference
+> 	Then the total price should be 700
 
+This text is backed by __RegistrationPriceSteps.cs__, which we'll need to implement.
 
 Resources
 
