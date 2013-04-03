@@ -2,7 +2,8 @@ Acceptance testing and vegetables have a lot in common. Most of us agree we ough
 
 We can compare the food pyramid with the testing pyramid, but this doesn't always make us feel better.
 
-http://cdn.ttgtmedia.com/rms/onlineImages/sSoftwareQuality_testautomation_strategy.jpg
+<img src="http://cdn.ttgtmedia.com/rms/onlineImages/sSoftwareQuality_testautomation_strategy.jpg">
+<img src="http://upload.wikimedia.org/wikipedia/commons/6/6d/USDA_Food_Pyramid.gif">
 
 
 
