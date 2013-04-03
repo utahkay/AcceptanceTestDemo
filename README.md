@@ -1,3 +1,5 @@
+
+
 <table><tr><td><img src="http://cdn.ttgtmedia.com/rms/onlineImages/sSoftwareQuality_testautomation_strategy.jpg"></td>
 <td><img src="http://upload.wikimedia.org/wikipedia/commons/6/6d/USDA_Food_Pyramid.gif"></td></tr></table>
 
@@ -5,7 +7,15 @@ Acceptance testing and vegetables have a lot in common. Most of us agree we ough
 
 What benefits would you hope to get from automated acceptance testing? That you don't get from other kinds of testing?
 
-This demo app shows the use of three different tools for acceptance testing: NUnit, SpecFlow, and FitNesse.
+This demo app shows the use of three different tools for acceptance testing: NUnit, SpecFlow, and FitNesse. Once you get the project, you should be able to build and run each of the three kinds of tests.
+ - The NUnit tests should pass.
+ - The SpecFlow spec should fail with "inconclusive". 
+ -  You may need to install the VisualStudio extension "SpecFlow", unless ReSharper picks up features automatically.
+ - You will need a java jre installed to run FitNesse. 
+  - Start FitNesse by running start-fitnesse.bat from the command line, in the __FitnesseServer__ folder.
+  - Browse to localhost:8080
+  - Navigate to AcceptanceTestDemo
+  - Click "Suite" to run the suite of tests. There's only one test, and it should pass.
 
 I was too lazy to write a UI, so you'll have to imagine this as a web app where you can register for various conferences. The app allows you to preview your registration price, given certain information:
   
