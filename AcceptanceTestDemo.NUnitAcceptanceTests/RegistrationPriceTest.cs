@@ -24,7 +24,7 @@ namespace AcceptanceTestDemo.NUnitAcceptanceTests
         }
 
         [Test]
-        public void TestSingleRegistration()
+        public void SingleRegistration()
         {
             var result = conferencesController.RegistrationPrice(ConferenceName, 1);
             var value = result.Data as RegistrationPriceResult;
