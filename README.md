@@ -93,6 +93,14 @@ As we get to the test case for late registration, we make use of the provided ut
         }
 ````
 
+Now, do we like this better? We've consolidated the data and can better see what test cases we have (and what ones we might be missing). We've also lost some information, such as the names of the tests, which were kind of helpful.
+
+In London some years ago, several developers began feeling that "testing" might be the wrong metaphor. Dan North started writing and creating tools that allowed you to write "behavior specs" instead of "tests." JBehave was ported to RSpec StoryRunner, which ended up being rewritten as Cucumber. In Cucumber, you specify behaviors in a natural-like language, and use regular expressions to pull the data values out for your test, er, spec code to use.
+
+http://cukes.info/
+
+In __RegistrationPrice.feature__ you can see the specs that are equivalent to our four NUnit test cases. This text is backed by __RegistrationPriceSteps.cs__, which we'll need to implement.
+
 
 
 Resources
